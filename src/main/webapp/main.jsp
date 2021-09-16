@@ -19,8 +19,8 @@
 		</div>
 		<div>
              <label>Foto para perfil:</label> 
-             <label for="arquivos" id="arquivo">Adicionar imagem</label>
-             <input type="file" name="arquivos" id ="arquivos"><br><br>
+             <label for="imagem" id="arquivo">Adicionar imagem</label>
+             <input type="file" name="imagem" id ="imagem"><br><br>
         </div> 
 		<div>
 			<label for="user">Apelido: </label> 

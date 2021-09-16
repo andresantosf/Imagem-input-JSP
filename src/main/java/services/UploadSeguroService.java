@@ -312,7 +312,7 @@ public class UploadSeguroService {
 							item.write(arquivo);
 							this.nomeArquivo = diretorio + File.separator + arquivo.getName();
 							if (arquivoTemp != null) {
-								arquivoTemp.deleteOnExit();
+								arquivoTemp.delete();
 							}
 						}
 					}
@@ -324,8 +324,6 @@ public class UploadSeguroService {
 				return false;
 			} catch (Exception e) {
 				if (arquivoTemp != null) {
-					// Voltando o arquivo para o nome original, caso tenha tido alguma falha na hora
-					// de salvar o novo
 					File arquivoOriginal = new File(nomeOriginal);
 					arquivoTemp.renameTo(arquivoOriginal);
 					arquivoTemp = null;
